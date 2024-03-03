@@ -1737,6 +1737,12 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3304704267367795401, guid: e4002232c517c5343b83090456804e97,
+        type: 3}
+      propertyPath: fireballPrefab
+      value: 
+      objectReference: {fileID: 398015061650695497, guid: 2edef9fde6225db4b8aea4e1674ccf49,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4002232c517c5343b83090456804e97, type: 3}
 --- !u!1 &1965902133
@@ -1750,6 +1756,8 @@ GameObject:
   - component: {fileID: 1965902135}
   - component: {fileID: 1965902134}
   - component: {fileID: 1965902136}
+  - component: {fileID: 1965902137}
+  - component: {fileID: 1965902138}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1812,6 +1820,33 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1965902137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965902133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ea0bb18b519304da54e6b9f465476b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 100
+--- !u!136 &1965902138
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965902133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23
+  m_Height: 1.1
+  m_Direction: 1
+  m_Center: {x: -0.08, y: 0.63, z: 0}
 --- !u!1 &2002234200
 GameObject:
   m_ObjectHideFlags: 0
